@@ -29,16 +29,13 @@ const StudentDetails = () => {
   };
   const border = { "&:last-child td, &:last-child th": { border: 0 } };
 
-  function createData(name, age, course, batch) {
-    return { name, age, course, batch };
-  }
   const student = [
-    createData("John", 24, "MERN", "October"),
-    createData("Doe", 25, "MERN", "September"),
-    createData("Biten", 26, "MERN", "September"),
-    createData("Barar", 22, "MERN", "November"),
-    createData("Christ", 23, "MERN", "October"),
-    createData("Elent", 24, "MERN", "November"),
+    { name: "John", age: 24, course: "MERN", batch: "October" },
+    { name: "Doe", age: 25, course: "MERN", batch: "September" },
+    { name: "Biten", age: 26, course: "MERN", batch: "September" },
+    { name: "Barar", age: 22, course: "MERN", batch: "November" },
+    { name: "Christ", age: 23, course: "MERN", batch: "October" },
+    { name: "Elent", age: 24, course: "MERN", batch: "November" },
   ];
   return (
     <>
