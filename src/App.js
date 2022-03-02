@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import "./components/index.css";
 import StudentDesc from "./components/student-desc";
+import PageNotFound from "./components/pagenotfound";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/studentdetails" element={<StudentDetails />} />
           <Route path="/studentdesc/:id" element={<StudentDesc />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
     </>
