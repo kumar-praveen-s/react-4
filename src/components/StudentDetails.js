@@ -41,7 +41,9 @@ const StudentDetails = () => {
     <>
       <div className="student">
         <h1>Student Details</h1>
-        <button className="btn-style">New Student</button>
+        <Link to="/studentdesc">
+          <button className="btn-style">New Student</button>
+        </Link>
       </div>
       <TableContainer component={Paper} style={tablestyle}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
