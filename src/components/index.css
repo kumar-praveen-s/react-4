@@ -49,3 +49,38 @@ a {
   text-decoration-line: underline;
   font-size: 17px;
 }
+
+.input-container {
+  width: 100%;
+  height: 450px;
+  border: 1px solid red;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 40%;
+}
+
+.btn-stu-con {
+  width: 20%;
+  display: block;
+}
+
+.btn-c-1 {
+  width: 100%;
+  font-size: 25px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-c-2 {
+  width: 100%;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
