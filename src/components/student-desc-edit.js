@@ -19,12 +19,15 @@ const StudentDescEdit = () => {
         batch: batch,
       };
     } else {
-      student.push({
-        name: name,
-        age: age,
-        course: course,
-        batch: batch,
-      });
+      setStudent([
+        ...student,
+        {
+          name: name,
+          age: age,
+          course: course,
+          batch: batch,
+        },
+      ]);
       console.log(student);
     }
   };

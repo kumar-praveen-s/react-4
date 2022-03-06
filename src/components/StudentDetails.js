@@ -29,7 +29,7 @@ const StudentDetails = () => {
     fontSize: "18px",
   };
   const border = { "&:last-child td, &:last-child th": { border: 0 } };
-  const [student, setStudent] = useContext(StudentContext);
+  const [student] = useContext(StudentContext);
   // console.log(student);
   // const student = [
   //   { name: "John", age: 24, course: "MERN", batch: "October" },
