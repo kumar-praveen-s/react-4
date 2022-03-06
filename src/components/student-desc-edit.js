@@ -12,12 +12,7 @@ const StudentDescEdit = () => {
   const [batch, setBatch] = useState(id ? student[id - 1].batch : "");
   const handleClick = () => {
     if (id) {
-      student[id - 1] = {
-        name: name,
-        age: age,
-        course: course,
-        batch: batch,
-      };
+      student[id - 1] = { name: name, age: age, course: course, batch: batch };
     } else {
       setStudent([
         ...student,
@@ -28,7 +23,6 @@ const StudentDescEdit = () => {
           batch: batch,
         },
       ]);
-      console.log(student);
     }
   };
   return (
