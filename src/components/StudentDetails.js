@@ -16,7 +16,7 @@ const StudentDetails = () => {
     width: "95%",
     borderRadius: "10px",
     position: "absolute",
-    top: "35%",
+    top: "250px",
     left: "2.5%",
   };
   const style = {
@@ -42,7 +42,7 @@ const StudentDetails = () => {
   return (
     <>
       <div className="student">
-        <h1>Student Details</h1>
+        <h1>Student</h1>
         <Link to="/studentdesc">
           <button className="btn-style">New Student</button>
         </Link>

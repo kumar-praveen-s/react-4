@@ -68,18 +68,36 @@ a {
 .btn-stu-con {
   width: 20%;
   display: block;
+  font-size: 25px;
+  border-radius: 20px;
 }
 
 .btn-c-1 {
-  font-size: 25px;
   background-color: blue;
   color: white;
-  border-radius: 20px;
 }
 
 .btn-c-2 {
-  width: 100%;
-  font-size: 25px;
-  border-radius: 20px;
   background-color: aliceblue;
+}
+
+@media (max-width: 600px) {
+  .input-container {
+    padding: 20px 0;
+  }
+  .box {
+    width: 90%;
+  }
+  .btn-stu-con {
+    width: 60%;
+  }
+  .btn-style {
+    width: 150px;
+    font-size: 0.9rem;
+  }
+  .student {
+    justify-content: space-between;
+    width: 95%;
+    left: 2.5%;
+  }
 }

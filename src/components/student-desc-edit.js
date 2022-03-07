@@ -1,6 +1,6 @@
 import { TextField } from "@mui/material";
 import React, { useState, useContext } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { StudentContext } from "./context";
 
 const StudentDescEdit = () => {
@@ -27,6 +27,11 @@ const StudentDescEdit = () => {
     }
     Navigate("/studentdetails");
   };
+
+  const handleCancel = () => {
+    Navigate("/studentdetails");
+  };
+
   return (
     <>
       <div className="input-container">
@@ -62,9 +67,9 @@ const StudentDescEdit = () => {
         <button onClick={handleClick} className="btn-c-1 btn-stu-con">
           Update
         </button>
-        <Link to="/studentdetails" className="btn-stu-con">
-          <button className="btn-c-2">cancel</button>
-        </Link>
+        <button className="btn-c-2 btn-stu-con" onClick={handleCancel}>
+          cancel
+        </button>
       </div>
     </>
   );
