@@ -1,6 +1,6 @@
 import { TextField } from "@mui/material";
 import React, { useState, useContext } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { StudentContext } from "./context";
 
 const StudentDescEdit = () => {
@@ -10,6 +10,7 @@ const StudentDescEdit = () => {
   const [age, setAge] = useState(id ? student[id - 1].age : 0);
   const [course, setCourse] = useState(id ? student[id - 1].course : "");
   const [batch, setBatch] = useState(id ? student[id - 1].batch : "");
+  const Navigate = useNavigate();
   const handleClick = () => {
     if (id) {
       student[id - 1] = { name: name, age: age, course: course, batch: batch };
@@ -24,6 +25,7 @@ const StudentDescEdit = () => {
         },
       ]);
     }
+    Navigate("/studentdetails");
   };
   return (
     <>
@@ -57,11 +59,9 @@ const StudentDescEdit = () => {
           onChange={(e) => setBatch(e.target.value)}
           className="box"
         />
-        <Link to="/studentdetails" className="btn-stu-con">
-          <button onClick={handleClick} className="btn-c-1">
-            Update
-          </button>
-        </Link>
+        <button onClick={handleClick} className="btn-c-1 btn-stu-con">
+          Update
+        </button>
         <Link to="/studentdetails" className="btn-stu-con">
           <button className="btn-c-2">cancel</button>
         </Link>
